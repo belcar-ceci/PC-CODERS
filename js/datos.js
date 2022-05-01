@@ -1,4 +1,4 @@
-let listaVivos = ["Ceci", "Abde", "Sol", "Mayu", "Miquel", "Ludmila"];
+let listaVivos = [];
 let listaMuertos = [];
 
 let ulVivos = document.querySelector(".pac-vivos");

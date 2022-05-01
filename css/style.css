@@ -4,6 +4,7 @@
 @import url(./animation.css);
 @import url(./pageStart.css);
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 @font-face {
   font-family: PAC-FONT;
   format: ("truetype");
@@ -34,92 +35,222 @@ h1 {
   font-size: 50px;
 }
 
+/*RANDOM PAGE*/
+/* smartphones, iPhone, portrait 480x320 phones */ 
+@media only screen and (min-width : 320px) {
+    h1 {
+        font-size: 35px;
+    }
 
-
-
-
-
-/*MEDIAS QUERYS*/
-@media (max-width: 375.5px) {
-
-  
-  h1 {
-    margin-top: 4%;
-    font-size: 2.4em;
-  }
-  .botones {
-    margin-top: -2%;
-  }
-  #boton_inicio {
-   
-    width: 30%;
-    height: 46px;
-    font-size: 0.8em;
-    line-height: 40px;
-    font-weight: bold;
-    margin-right: 6%;
-  }
-  #boton_reiniciar {
-    
-    width: 30%;
-    height: 46px;
-    font-size: 0.8em;
-    line-height: 40px;
-    margin-left: 6%;
-}
-  #add_coder {
-    margin-top: 18%;
-    width: 21%;
-    height: 46px;
-    border-radius: 14px;
-    font-size: 0.6em;
-    line-height: 21px;
-    font-weight: bold;
-}
-  
-  #newCoder {
-    margin-top: 18%;
-    font-size: 0.1em;
-    height: 44px;
-    width: 59%;
+    #returnGame {
+    width: 25%;
+    height: 30%;
+    left: 40%;
+    top: 2%;
     border-radius: 15px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1px;
+    line-height: 35px;
+    text-indent: 10px;
+    color: #FFFFFF;
+    box-shadow: 0px 2px 10px grey;
+    transition: 150ms ease;
+    border-bottom: 5px solid #3e2304;
+    justify-content: center;
+    background: linear-gradient(#EF8202, #8d500a);
+    text-decoration: none;
+}
 }
 
-footer {
-  position: absolute;
-  display: flex;
-  bottom: 0;
-  margin-top: 5%;
-  margin-bottom: 27%;
+@media (min-width:481px)  { 
+    h1 {
+    font-size: 40px;
+    }
+    #newCoder {
+    margin-top: 23%;
+    }
+    .coders {
+    margin-top: 46%;
+    font-size: 1.5em;
+  }
+  #add_coder {
+    margin-top: 23%;
+  }
+  .fantasma_vivo {
+    height: 65px;
+
 }
+.fantasma_muerto {
+    height: 49px;
+    margin-top: -79px;
+}
+  footer {
+    margin-bottom: 5%;
+} 
 #Pcman {
-  width: 27%;
-  height: 70%;
-  
-  margin-top: 6%;
-  margin-left: 1.5%;
+    width: 15%;
+    height: 70%;
+    margin-top: 15%;
+    margin-left: 11%;
 }
 #Gosht {
-  width: 21%;
-  height: 8%;
- 
-  margin-top: 9%;
-  margin-left: 15%;
+    width: 13%;
+    height: 8%;
+    margin-top: 16%;
+    margin-left: 19%;
+}
+}
+
+@media (min-width:641px)  { 
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+  h1 {
+    font-size: 35px;
+    }
+    #returnGame {
+    width: 22%;
+    height: 21%;
+    left: 40%;
+    top: 0%;
+    }
+    #newCoder {
+    margin-top: 17%;
+}
+.botones {
+    margin-top: 0%;
+}
+#add_coder {
+    margin-top: 17.5%;
 }
 .coders {
-  margin-top: 50%;
+    margin-top: 35%;
+    font-size: 1.5em;
+}
+#Gosht {
+    width: 8%;
+    height: 8%;
+    margin-top: 21%;
+    margin-left: 20%;
+}
+#Pcman {
+    width: 10%;
+    height: 70%;
+    margin-top: 20%;
+    margin-left: 35%;
+}
+}
+@media (min-width:961px)  {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+  h1 {
+    font-size: 40px;
+    }
+    .botones {
+    margin-top: 2%;
+    }
+  header {
+    margin-top: 1%;
+
+  }
+  #newCoder {
+    margin-top: 9%;
+  }
+  #add_coder {
+    margin-top: 9%;
+  }
+  .coders {
+    margin-top: 20%;
+}
+footer {
+    margin-bottom: 2%;
+}
+#Pcman {
+    width: 8%;
+    /* height: 70%; */
+    margin-top: 20%;
+    margin-left: 40%;
+    z-index: 9;
+}
+#Gosht {
+
+    margin-top: 20%;
+}
+#Pcman {
+    -webkit-animation: cssAnimation 20s forwards; 
+    animation: cssAnimation 20s forwards;
+}
+@keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-webkit-keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+#Gosht {
+    -webkit-animation: cssAnimations 20s forwards; 
+    animation: cssAnimations 20s forwards;
+}
+@keyframes cssAnimations {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-webkit-keyframes cssAnimations {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+}
+@media (min-width:1025px) { 
+  /* big landscape tablets, laptops, and desktops */ 
+  h1 {
+    font-size: 40px;
+    }
+  #Pcman {
+
+  margin-left: 40%;
+  z-index: 9;
+  }
+  #Pcman {
+    -webkit-animation: cssAnimation 10s forwards; 
+    animation: cssAnimation 10s forwards;
+}
+@keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-webkit-keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+#Gosht {
+    -webkit-animation: cssAnimations 10s forwards; 
+    animation: cssAnimations 10s forwards;
+}
+@keyframes cssAnimations {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-webkit-keyframes cssAnimations {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+}
 
 }
-
-.lista_vivos {
-  padding-top: 5rem;
-}
-.lista_muertos {
-  padding-top: 5rem;
-}
-li{
-  font-size: 0.7em;
-  line-height: 32px;
+@media (min-width:1281px) { 
+  /* hi-res laptops and desktops */ 
+  h1 {
+    font-size: 40px;
+    }
 }
 
-}
+
+

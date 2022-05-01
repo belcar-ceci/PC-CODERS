@@ -90,3 +90,37 @@
     height: 45px;
     border-radius: 15px;
   }
+
+#returnGame {
+    position: absolute;
+    width: 11%;
+    height: 39%;
+    left: 46%;
+    top: 6%;
+    /* background: #EF8202; */
+    border-radius: 15px;
+    font-family: 'Press Start 2P', cursive;
+    /* font-style: normal; */
+    /* font-weight: normal; */
+    font-size: 0.5em;
+    line-height: 60px;
+    /* align-items: flex-end; */
+    text-align: center;
+    letter-spacing: 0.3em;
+    text-indent: 10px;
+    color: #FFFFFF;
+    box-shadow: 0px 2px 10px grey;
+    transition: 150ms ease;
+    border-bottom: 5px solid #3e2304;
+    justify-content: center;
+    background: linear-gradient(#EF8202, #8d500a);
+    text-decoration: none;
+}
+
+#return:active {
+    border: none;
+    border-bottom: 2px solid rgb(235, 220, 16);
+    box-shadow: 0px 1px 5px grey;
+    background: linear-gradient(#EF8202, #d87e2a);
+    color: #fff;
+  }
