@@ -25,7 +25,7 @@ Estas instrucciones te permitirán obtener una copia del proyecto en funcionamie
 
 Abre la terminal y ejecuta: git clone https://github.com/crada2/PC-CODERS.git para descargar el proyecto, realiza un fork.
 
-Para desplegar la página en funcionamiento puedes acceder aquí https://crada2.github.io/PC-CODERS/
+Para desplegar la página en funcionamiento puedes acceder aquí https://belcar-ceci.github.io/PC-CODERS/
 
 ## Wireframe 🚀
 Wireframe de la idea principal del proyecto con funcionalidad:
